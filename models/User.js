@@ -16,7 +16,8 @@ const userSchema = new mongoose.Schema(
             trim: true,
         },
         accountType: {
-            type: ["User", "Admin"],
+            type: String,
+            enum: ["User", "Admin"],
             required: true,
         },
         password: {

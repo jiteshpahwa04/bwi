@@ -20,7 +20,7 @@ exports.adminSignup = async (req, res) => {
     // Check if All Details are there or not
     if (
       !name ||
-      (contact && email) ||
+      !(contact && email) ||
       !password ||
       !confirmPassword
     ) {
